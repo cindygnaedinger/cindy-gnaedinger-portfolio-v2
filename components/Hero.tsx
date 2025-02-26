@@ -3,10 +3,12 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "./ui/MagicButton";
+import { GrFormDown } from "react-icons/gr";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-32">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -30,7 +32,7 @@ const Hero = () => {
           </h2>
 
           <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[40px] md:text-5xl lg:text-5xl"
             words="Transformando necesidades en experiencias de usuario accesibles"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
@@ -39,6 +41,13 @@ const Hero = () => {
             <span className="text-purple font-bold">comunicación visual</span>
           </p>
           <p>Córdoba, Argentina</p>
+          <a href="#about">
+            <MagicButton
+              title="Sobre mí"
+              icon={<GrFormDown />}
+              position="right"
+            />
+          </a>
         </div>
       </div>
     </div>
