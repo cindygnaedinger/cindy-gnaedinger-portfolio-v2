@@ -36,12 +36,13 @@ const Hero = () => {
             words="Transformando necesidades en experiencias de usuario accesibles"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hola, soy <span className="text-purple font-bold">Cindy</span> y me
-            apasiona la{" "}
-            <span className="text-purple font-bold">comunicación visual</span>
+            Hola, soy <span className="text-purple font-bold">Cindy</span> y soy{" "}
+            <span className="text-purple font-bold">
+              desarrolladora y comunicadora visual
+            </span>
           </p>
           <p>Córdoba, Argentina</p>
-          <a href="#about">
+          <a href="#about" className="mt-4 sm:mt-2">
             <MagicButton
               title="Sobre mí"
               icon={<GrFormDown />}
