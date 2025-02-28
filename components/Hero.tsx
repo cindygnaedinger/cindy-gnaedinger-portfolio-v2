@@ -4,7 +4,7 @@ import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
-import { GrFormDown } from "react-icons/gr";
+import { GrFormDown, GrFormLocation } from "react-icons/gr";
 
 const Hero = () => {
   return (
@@ -33,18 +33,20 @@ const Hero = () => {
 
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-5xl"
-            words="Transformando necesidades en experiencias de usuario accesibles"
+            words="Transformando código y diseño en experiencias de usuario únicas"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hola, soy <span className="text-purple font-bold">Cindy</span> y soy{" "}
-            <span className="text-purple font-bold">
-              desarrolladora y comunicadora visual
-            </span>
+            Hola, soy <span className="text-purple font-bold">Cindy</span>,
+            desarrolladora y diseñadora web
           </p>
-          <p>Córdoba, Argentina</p>
+          <div className="flex items-center gap-2 text-center md:tracking-wider mb-4 text-xs md:text-lg lg:text-[16px]">
+            <GrFormLocation size="32px" color="#cbacf9" />
+            <p>Córdoba, Argentina</p>
+          </div>
+
           <a href="#about" className="mt-4 sm:mt-2">
             <MagicButton
-              title="Sobre mí"
+              title="Te cuento sobre mí"
               icon={<GrFormDown />}
               position="right"
             />

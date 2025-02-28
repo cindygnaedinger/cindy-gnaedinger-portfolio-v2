@@ -7,7 +7,7 @@ import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import Lottie from "react-lottie";
-import { SparklesCore } from "./Sparkles";
+import { SparklesWrapper } from "./SparklesWrapper";
 
 export const BentoGrid = ({
   className,
@@ -70,14 +70,9 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+        "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
         className
       )}
-      //   style={{
-      //     background: "#0A011E",
-      //     backgroundColor:
-      //       "linear-gradient(90deg, rgba(255,161,255,1) 0%, rgba(179,0,249,1) 35%, rgba(104,5,242,1) 100%)",
-      //   }}
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
@@ -124,27 +119,7 @@ export const BentoGridItem = ({
             {title}
           </div>
 
-          {id === 2 && (
-            <div
-              style={{
-                position: "absolute", // Usamos absolute para que no afecte el layout
-                top: 0,
-                left: 0,
-                width: "100%", // Ocupa todo el ancho del contenedor padre
-                height: "100%", // Ocupa todo el alto del contenedor padre
-                zIndex: 0, // Asegura que esté detrás del contenido
-              }}
-            >
-              <SparklesCore
-                background="transparent"
-                minSize={0.4}
-                maxSize={1.5}
-                particleDensity={120}
-                className="w-full h-full"
-                particleColor="#7243B4"
-              />
-            </div>
-          )}
+          {id && <SparklesWrapper id={id} />}
 
           {id === 3 && (
             <div className="flex gap-1 w-fit absolute -right-3 lg:-right-2">
