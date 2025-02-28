@@ -7,29 +7,28 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title:
-      "Transformo mi pasión por las artes visuales en experiencias digitales atractivas y funcionales.",
-    description: "",
+    title: "Moodboard",
+    description: "¿Por dónde empiezo?",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
+    titleClassName: "justify-start",
     img: "/b1-opt4.jpg",
     spareImg: "",
   },
   {
     id: 2,
-    title: "Traducciones TI precisas respaldadas por mi experiencia.",
-    description: "",
+    title: "Sistema de color",
+    description: "¿Qué quiero comunicar?",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
+    imgClassName: "w-full h-full object-cover",
     titleClassName: "justify-start",
     img: "",
-    spareImg: "",
+    spareImg: "/color_system.png",
   },
   {
     id: 3,
-    title: "Mi tech stack",
-    description: "Compromiso con la mejora constante",
+    title: "Tech\n Stack",
+    description: "¿La rueda ya existe?",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +37,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "El trabajo en equipo y la comunicación abierta son mi prioridad",
+    title: "Prototipos, perfil de usuario, flujos de interacción",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,8 +48,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "React, Next.js, Tailwind y más en mis proyectos actuales",
-    description: "Nuevas herramientas",
+    title: "Traducción de\n necesidades",
+    description: "¿Qué quiere el cliente?\n¿Qué necesita el usuario?",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",

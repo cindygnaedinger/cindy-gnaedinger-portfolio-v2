@@ -46,7 +46,7 @@ const Hero = () => {
 
           <a href="#about" className="mt-4 sm:mt-2">
             <MagicButton
-              title="Te cuento sobre mí"
+              title="Mi tablero de trabajo"
               icon={<GrFormDown />}
               position="right"
             />
