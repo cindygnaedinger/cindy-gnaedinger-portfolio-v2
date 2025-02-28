@@ -48,8 +48,7 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["JavaScript", "React", "Next.js"];
-  const centerLists = ["Figma", "Aceternety UI", "Shadcn"];
-  const rightLists = ["HTML5", "CSS3", "Tailwind"];
+  const rightLists = ["Figma", "Aceternity UI", "Tailwind"];
 
   const [copied, setCopied] = useState(false);
 
@@ -125,7 +124,6 @@ export const BentoGridItem = ({
           {id === 3 && (
             <div className="flex gap-1 w-fit absolute -right-3 lg:-right-2">
               <div className="flex flex-col gap-2 text-sm ">
-                <span className="py-4 px-3 rounded-lg text-center bg-[#16002E]" />
                 {leftLists.map((item) => (
                   <span
                     key={item}
@@ -135,19 +133,9 @@ export const BentoGridItem = ({
                     {item}
                   </span>
                 ))}
-              </div>
-              {/* Center Lists */}
-              <div className="flex flex-col gap-2 mx-3">
-                {centerLists.map((item) => (
-                  <span
-                    key={item}
-                    className="py-2 px-3 text-sm lg:text-base opacity-50 lg:opacity-50 rounded-lg text-center bg-[#16002E]"
-                  >
-                    {item}
-                  </span>
-                ))}
                 <span className="py-4 px-3 rounded-lg text-center bg-[#16002E]" />
               </div>
+
               <div className="flex flex-col gap-2 mr-3">
                 <span className=" py-4 px-3 text-sm  rounded-lg text-center bg-[#16002E]" />
                 {rightLists.map((item) => (

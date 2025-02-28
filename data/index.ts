@@ -27,7 +27,7 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Tech\n Stack",
+    title: "Tech Stack",
     description: "¿La rueda ya existe?",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -37,8 +37,8 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "¿Qué busca el cliente?",
-    description: "",
+    title: "Definición de \n intereses",
+    description: "¿Qué busca el cliente?",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -48,7 +48,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Traducción de\n necesidades",
+    title: "Traducción de \n necesidades",
     description: "¿Qué necesita el usuario?",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
