@@ -37,7 +37,7 @@ const Hero = () => {
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Hola, soy <span className="text-purple font-bold">Cindy</span>,
-            desarrolladora y diseñadora web
+            diseñadora y desarrolladora web
           </p>
           <div className="flex items-center gap-2 text-center md:tracking-wider mb-4 text-xs md:text-lg lg:text-[16px]">
             <GrFormLocation size="32px" color="#cbacf9" />

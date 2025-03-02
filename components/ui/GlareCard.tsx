@@ -47,7 +47,6 @@ export const GlareCard = ({
     "--pattern": "var(--foil-svg) center/100% no-repeat",
     "--rainbow":
       "repeating-linear-gradient( 0deg,#8A2BE2 calc(var(--step) * 1), #BA55D3 calc(var(--step) * 2), #9932CC calc(var(--step) * 3), #9400D3 calc(var(--step) * 4), #8B008B calc(var(--step) * 5), #4B0082 calc(var(--step) * 6), #8A2BE2 calc(var(--step) * 7) ) 0% var(--bg-y)/200% 700% no-repeat",
-
     "--diagonal":
       "repeating-linear-gradient( 128deg,#0e152e 0%,hsl(180,10%,60%) 3.8%,hsl(180,10%,60%) 4.5%,hsl(180,10%,60%) 5.2%,#0e152e 10%,#0e152e 12% ) var(--bg-x) var(--bg-y)/300% no-repeat",
     "--shade":
@@ -57,7 +56,6 @@ export const GlareCard = ({
 
   const updateStyles = () => {
     if (refElement.current) {
-      console.log(state.current);
       const { background, rotate, glare } = state.current;
       refElement.current?.style.setProperty("--m-x", `${glare.x}%`);
       refElement.current?.style.setProperty("--m-y", `${glare.y}%`);
@@ -70,7 +68,7 @@ export const GlareCard = ({
   return (
     <div
       style={containerStyle}
-      className="relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-[80%] [aspect-ratio:17/21]"
+      className="relative isolate [contain:layout_style] [perspective:600px] transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] will-change-transform w-full h-full"
       ref={refElement}
       onPointerMove={(event) => {
         const rotateFactor = 0.4;
@@ -119,7 +117,7 @@ export const GlareCard = ({
         }
       }}
     >
-      <div className="h-full w-[400px] grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))] rounded-[var(--radius)] border border-slate-900 hover:[--opacity:0.2] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden shadow-lg shadow-white/10 ">
+      <div className="h-full w-full grid will-change-transform origin-center transition-transform duration-[var(--duration)] ease-[var(--easing)] delay-[var(--delay)] [transform:rotateY(var(--r-x))_rotateX(var(--r-y))] rounded-[var(--radius)] border border-slate-900 hover:[--opacity:0.2] hover:[--duration:200ms] hover:[--easing:linear] hover:filter-none overflow-hidden shadow-lg shadow-white/10">
         <div className="w-full h-full grid [grid-area:1/1] mix-blend-soft-light [clip-path:inset(0_0_0_0_round_var(--radius))]">
           <div
             className={cn("h-full w-full ", className)}
