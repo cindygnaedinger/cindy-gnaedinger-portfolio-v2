@@ -15,7 +15,7 @@ const Clients = () => {
         Un espacio para que compartas que te pareció mi portfolio hasta ahora
         y/o tu experiencia trabajando conmigo.
       </p>
-      <div className="flex flex-col items-center mb-4">
+      <div className="flex flex-col items-center mb-10">
         <MagicButton
           title="Agregar testimonio"
           icon={<MdAdd />}

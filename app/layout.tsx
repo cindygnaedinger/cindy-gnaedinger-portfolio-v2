@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Cindy Gnaedinger's Portfolio",
   description: "Version 2.0",
+  icons: "/favicon.svg",
 };
 
 export default function RootLayout({

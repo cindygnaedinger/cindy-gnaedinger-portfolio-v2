@@ -1,0 +1,22 @@
+/* GlareCard.css */
+@keyframes purpleGlow {
+  0% {
+    box-shadow: 0 0 10px 5px rgba(138, 43, 226, 0.5);
+  }
+  25% {
+    box-shadow: 0 0 20px 10px rgba(138, 43, 226, 0.75);
+  }
+  50% {
+    box-shadow: 0 0 30px 15px rgba(138, 43, 226, 1);
+  }
+  75% {
+    box-shadow: 0 0 20px 10px rgba(138, 43, 226, 0.75);
+  }
+  100% {
+    box-shadow: 0 0 10px 5px rgba(138, 43, 226, 0.5);
+  }
+}
+
+.purple-glow-effect {
+  animation: purpleGlow 5s infinite linear;
+}
