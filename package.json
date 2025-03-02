@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-label": "^2.1.2",
     "@react-three/drei": "^10.0.3",
     "@react-three/fiber": "^9.0.4",
+    "@tabler/icons-react": "^3.30.0",
     "@tailwindcss/postcss": "^4.0.9",
     "@tsparticles/engine": "^3.8.1",
     "@tsparticles/react": "^3.0.0",

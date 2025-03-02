@@ -26,6 +26,10 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        input: `0px 2px 3px -1px rgba(0,0,0,0.1), 0px 1px 0px 0px rgba(25,28,33,0.02), 0px 0px 0px 1px rgba(25,28,33,0.08)`,
+        inputHover: `0px 2px 5px 2px rgba(114, 67, 180, 0.6)`, 
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -42,6 +46,7 @@ const config = {
           "100": "#E4ECFF",
         },
         purple: "#CBACF9",
+        purplem: "#7243B4",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

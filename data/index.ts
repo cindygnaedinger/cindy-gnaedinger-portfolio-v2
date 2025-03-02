@@ -213,3 +213,12 @@ export const socialMedia = [
     img: "/link.svg",
   },
 ];
+
+// data/index.ts
+export interface Testimonial {
+  id: number;
+  name: string;
+  comment: string;
+  quote?: string; // Propiedad opcional
+  title?: string; // Propiedad opcional
+}
